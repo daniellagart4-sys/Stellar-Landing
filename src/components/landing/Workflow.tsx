@@ -28,7 +28,7 @@ const Workflow = () => {
       number: "04",
       title: "Account Activated with Gasless Capability",
       description: "Soroban smart contracts manage the account. Users transact immediately without holding XLM",
-      color: "accent",
+      color: "primary",
     },
   ];
 
@@ -36,7 +36,7 @@ const Workflow = () => {
     <section id="workflow" className="py-24 bg-gradient-dark text-primary-foreground overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="gasless-badge mb-4">How It Works</span>
+          <span className="inline-block px-4 py-2 rounded-full text-sm font-bold bg-primary text-primary-foreground mb-4">How It Works</span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Four Steps to Frictionless Onboarding
           </h2>
@@ -55,23 +55,13 @@ const Workflow = () => {
                 {/* Step Card */}
                 <div className="relative bg-card/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/10 hover:border-accent/50 transition-all duration-300 hover:-translate-y-2">
                   {/* Number Badge */}
-                  <div className={`absolute -top-4 left-6 px-3 py-1 rounded-full text-xs font-bold ${
-                    step.color === "accent" 
-                      ? "bg-gradient-gasless text-accent-foreground" 
-                      : "bg-gradient-primary text-primary-foreground"
-                  }`}>
+                  <div className="absolute -top-4 left-6 px-3 py-1 rounded-full text-xs font-bold bg-gradient-primary text-primary-foreground">
                     {step.number}
                   </div>
 
                   {/* Icon */}
-                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 mt-2 ${
-                    step.color === "accent"
-                      ? "bg-accent/20"
-                      : "bg-primary-foreground/10"
-                  }`}>
-                    <step.icon className={`w-7 h-7 ${
-                      step.color === "accent" ? "text-accent" : "text-primary-foreground"
-                    }`} />
+                  <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 mt-2 bg-primary-foreground/10">
+                    <step.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
 
                   <h3 className="font-display text-lg font-bold mb-2">
@@ -81,13 +71,6 @@ const Workflow = () => {
                     {step.description}
                   </p>
 
-                  {/* Gasless indicator for step 4 */}
-                  {index === 3 && (
-                    <div className="mt-4 inline-flex items-center gap-1 text-accent text-xs font-bold">
-                      <Zap className="w-3 h-3" />
-                      GASLESS ENABLED
-                    </div>
-                  )}
                 </div>
 
                 {/* Arrow for desktop */}
