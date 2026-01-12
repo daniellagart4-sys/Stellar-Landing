@@ -24,7 +24,8 @@
     --muted: 263 20% 96%;
     --muted-foreground: 263 15% 45%;
 
-    --accent: 175 85% 45%;
+    /* Accent changed from cyan hue to match #009B94 */
+    --accent: 177 100% 30%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -38,12 +39,12 @@
 
     /* Custom Accesly tokens */
     --purple-glow: 263 100% 70%;
-    --cyan-glow: 175 100% 55%;
+    --cyan-glow: 177 100% 55%;
     --dark-purple: 263 84% 8%;
     --gradient-primary: linear-gradient(135deg, hsl(263 70% 50%) 0%, hsl(280 80% 60%) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(263 30% 98%) 0%, hsl(0 0% 100%) 100%);
     --gradient-dark: linear-gradient(135deg, hsl(263 84% 8%) 0%, hsl(263 70% 15%) 100%);
-    --gradient-gasless: linear-gradient(135deg, hsl(175 85% 45%) 0%, hsl(160 90% 50%) 100%);
+    --gradient-gasless: linear-gradient(135deg, hsl(177 100% 30%) 0%, hsl(160 90% 50%) 100%);
     --shadow-glow: 0 0 60px hsl(263 70% 50% / 0.3);
     --shadow-card: 0 4px 40px hsl(263 70% 50% / 0.08);
     --shadow-card-hover: 0 8px 60px hsl(263 70% 50% / 0.15);
@@ -129,7 +130,7 @@
     @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
     background: var(--gradient-gasless);
     color: hsl(var(--accent-foreground));
-    box-shadow: 0 0 20px hsl(175 85% 45% / 0.4);
+    box-shadow: 0 0 20px hsl(177 100% 30% / 0.4);
   }
 
   .animate-float {
