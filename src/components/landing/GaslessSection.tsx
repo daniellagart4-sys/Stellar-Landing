@@ -1,4 +1,4 @@
-import { Zap, Fuel, Check, ArrowRight, Wallet, CreditCard, Repeat, MousePointer2 } from "lucide-react";
+import { Zap, Fuel, Wallet, CreditCard, Repeat, MousePointer2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const GaslessSection = () => {
@@ -12,29 +12,6 @@ const GaslessSection = () => {
   const acceslySteps = [
     { icon: MousePointer2, text: 'Click "Continue with Google"', status: "good" },
     { icon: Zap, text: "Start using the app", status: "good" },
-  ];
-
-  const gaslessFeatures = [
-    {
-      title: "Sponsored Reserves",
-      description: "Your application sponsors account creation and initial transactions",
-    },
-    {
-      title: "Flexible Fee Model",
-      description: "Choose to sponsor all transactions or only onboarding",
-    },
-    {
-      title: "Seamless UX",
-      description: "Users never see gas fees, blockchain complexity, or funding requirements",
-    },
-    {
-      title: "Cost-Effective",
-      description: "Stellar's ultra-low fees (~$0.00001/tx) make sponsorship viable at scale",
-    },
-    {
-      title: "Developer Control",
-      description: "Set transaction limits, whitelist operations, or require payment after onboarding",
-    },
   ];
 
   return (
@@ -108,27 +85,6 @@ const GaslessSection = () => {
                 Zero friction = maximum conversion
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* How Gasless Works */}
-        <div className="max-w-5xl mx-auto">
-          <h3 className="font-display text-2xl font-bold text-center mb-8">
-            How Gasless Works
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {gaslessFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-6 border border-border hover:border-primary/30 hover:shadow-card transition-all"
-              >
-                <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                  <Check className="w-4 h-4 text-accent" />
-                </div>
-                <h4 className="font-semibold mb-2">{feature.title}</h4>
-                <p className="text-sm text-muted-foreground">{feature.description}</p>
-              </div>
-            ))}
           </div>
         </div>
 

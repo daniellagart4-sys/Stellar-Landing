@@ -51,11 +51,6 @@ const Hero = () => {
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
-            <Button variant="heroOutline" size="xl" asChild>
-              <a href="https://github.com/Hoblayerta/Stellar-Account-Abstraction-SDK" target="_blank" rel="noopener noreferrer">
-                View Documentation
-              </a>
-            </Button>
             <Button variant="ghost" size="lg" asChild>
               <a href="https://t.me/+btpRC-Bo02QxYWYx" target="_blank" rel="noopener noreferrer">
                 Join Telegram
