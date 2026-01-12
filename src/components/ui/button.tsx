@@ -14,6 +14,7 @@ const buttonVariants = cva(
         outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
+        telegram: "bg-accent text-accent-foreground shadow-glow hover:shadow-xl hover:-translate-y-1 font-bold tracking-wide",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-gradient-primary text-primary-foreground shadow-glow hover:shadow-xl hover:-translate-y-1 font-bold tracking-wide",
         heroOutline: "border-2 border-primary/30 bg-background/80 backdrop-blur-sm text-primary hover:border-primary hover:bg-primary/5 font-semibold",

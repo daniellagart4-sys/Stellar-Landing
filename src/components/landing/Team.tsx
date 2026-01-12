@@ -10,9 +10,9 @@ const Team = () => {
     },
     {
       name: "Daniel Bustamante",
-      role: "Security & Frontend Engineering",
-      twitter: "@HackBalam",
-      twitterUrl: "https://twitter.com/HackBalam",
+      role: "Security & Cloud Engineering",
+      twitter: "@DrConnors26",
+      twitterUrl: "https://x.com/DrConnors26",
     },
     {
       name: "José Román Andrade",

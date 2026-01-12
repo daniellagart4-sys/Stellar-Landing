@@ -18,7 +18,7 @@ const Footer = () => {
           </h2>
           <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mb-8">
             Solidify Stellar as the de facto standard for real-world applications by providing 
-            the critical infrastructure for seamless, large-scale user onboarding—with true 
+            the critical infrastructure for seamless, large-scale user onboarding, with true 
             Web2-like gasless experiences.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -41,7 +41,7 @@ const GaslessSection = () => {
           {/* Traditional */}
           <div className="relative">
             <div className="absolute inset-0 bg-destructive/5 rounded-2xl" />
-            <div className="relative bg-card rounded-2xl p-8 border border-destructive/20">
+            <div className="relative bg-card rounded-2xl p-8 border border-destructive/20 h-full shadow-card">
               <h3 className="font-display text-xl font-bold mb-6 text-muted-foreground">
                 Traditional Blockchain Apps
               </h3>
@@ -64,8 +64,8 @@ const GaslessSection = () => {
 
           {/* Accesly */}
           <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-gasless rounded-3xl blur opacity-30" />
-            <div className="relative bg-card rounded-2xl p-8 border border-accent/30">
+            <div className="absolute inset-0 bg-accent/5 rounded-2xl" />
+            <div className="relative bg-card rounded-2xl p-8 border border-accent/20 h-full shadow-card">
               <div className="flex items-center gap-2 mb-6">
                 <h3 className="font-display text-xl font-bold">With Accesly</h3>
                 <span className="gasless-badge text-[10px]">GASLESS</span>

@@ -31,7 +31,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium mb-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            The next million users won't use a seed phrase—
+            The next million users won't use a seed phrase
             <br className="hidden sm:block" />
             they'll log in with Google
           </p>
@@ -40,7 +40,7 @@ const Hero = () => {
           <p className="text-base md:text-lg text-muted-foreground/80 max-w-3xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             Accesly enables instant, invisible wallet creation through familiar social accounts. 
             Users click "Continue with Google" and get a secure, non-custodial Stellar wallet ready 
-            to transact in seconds—<strong className="text-foreground">with zero gas fees</strong>.
+            to transact in seconds, <strong className="text-foreground">with zero gas fees</strong>.
           </p>
 
           {/* CTAs */}
@@ -51,7 +51,7 @@ const Hero = () => {
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
-            <Button variant="ghost" size="lg" asChild>
+            <Button variant="telegram" size="lg" asChild>
               <a href="https://t.me/+btpRC-Bo02QxYWYx" target="_blank" rel="noopener noreferrer">
                 Join Telegram
               </a>

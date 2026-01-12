@@ -70,11 +70,11 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative rounded-2xl p-8 ${
+              className={`relative rounded-2xl p-8 h-full flex flex-col ${
                 plan.popular
                   ? "bg-gradient-primary text-primary-foreground shadow-glow scale-105"
                   : "bg-card border border-border shadow-card"
@@ -128,7 +128,7 @@ const Pricing = () => {
               <Button
                 variant={plan.popular ? "default" : plan.variant}
                 size="lg"
-                className={`w-full ${plan.popular ? "bg-primary-foreground text-primary hover:bg-primary-foreground/90" : ""}`}
+                className={`w-full ${plan.popular ? "bg-primary-foreground text-primary hover:bg-primary-foreground/90" : ""} mt-auto`}
                 asChild
               >
                 <a href="https://t.me/+btpRC-Bo02QxYWYx" target="_blank" rel="noopener noreferrer">

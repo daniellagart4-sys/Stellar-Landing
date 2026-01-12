@@ -41,7 +41,7 @@ const Workflow = () => {
             Four Steps to Frictionless Onboarding
           </h2>
           <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto">
-            From click to transaction in seconds—no seed phrases, no wallet funding required.
+            From click to transaction in seconds, no seed phrases, no wallet funding required.
           </p>
         </div>
 
@@ -51,9 +51,9 @@ const Workflow = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="relative group">
+              <div key={index} className="relative group h-full">
                 {/* Step Card */}
-                <div className="relative bg-card/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/10 hover:border-accent/50 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative bg-card/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/10 hover:border-accent/50 transition-all duration-300 hover:-translate-y-2 h-full flex flex-col justify-start">
                   {/* Number Badge */}
                   <div className="absolute -top-4 left-6 px-3 py-1 rounded-full text-xs font-bold bg-gradient-primary text-primary-foreground">
                     {step.number}
@@ -64,12 +64,14 @@ const Workflow = () => {
                     <step.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
 
-                  <h3 className="font-display text-lg font-bold mb-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-sm text-primary-foreground/70">
-                    {step.description}
-                  </p>
+                  <div>
+                    <h3 className="font-display text-lg font-bold mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-primary-foreground/70">
+                      {step.description}
+                    </p>
+                  </div>
 
                 </div>
 
